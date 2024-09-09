@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Rework Correction Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 210mm; /* A4 page width */
+            height: 297mm; /* A4 page height */
+            padding: 20mm;
+            margin: 0 auto;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+            }
+
+            .container {
+                border: none;
+                padding: 0;
+                page-break-after: always;
+            }
+        }
+
+        .download-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p>তারিখ: [তারিখ লিখুন]</p>
+        <p>বরাবর,<br>
+        পাসপোর্ট অফিসার,<br>
+        [আপনার আঞ্চলিক পাসপোর্ট অফিসের নাম]<br>
+        [পাসপোর্ট অফিসের ঠিকানা]</p>
+
+        <p><strong>বিষয়:</strong> ই-পাসপোর্টে Local Rework সংশোধনের জন্য আবেদন।</p>
+
+        <p>জনাব/জনাবা,</p>
+
+        <p>আমি, [আপনার নাম], পিতা/মাতার নাম: [পিতার নাম/মাতার নাম], বর্তমান ঠিকানা: [আপনার ঠিকানা], আপনাকে জানাতে চাই যে আমি ই-পাসপোর্টের জন্য আবেদন করেছি, যার রেফারেন্স নম্বর [আপনার আবেদন নম্বর]। তবে, আমার পাসপোর্ট আবেদন প্রক্রিয়ায় "Local Rework" পড়েছে এবং তা সংশোধনের প্রয়োজন।</p>
+
+        <p><strong>Local Rework সংশোধনের জন্য ভুল তথ্য ও সংশোধনীয় তথ্যের তালিকা:</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ক্র. নং</th>
+                    <th>ভুল তথ্য</th>
+                    <th>সংশোধনীয় তথ্য</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>১</td>
+                    <td>[ভুল তথ্য ১]</td>
+                    <td>[সংশোধনীয় তথ্য ১]</td>
+                </tr>
+                <tr>
+                    <td>২</td>
+                    <td>[ভুল তথ্য ২]</td>
+                    <td>[সংশোধনীয় তথ্য ২]</td>
+                </tr>
+                <tr>
+                    <td>৩</td>
+                    <td>[ভুল তথ্য ৩]</td>
+                    <td>[সংশোধনীয় তথ্য ৩]</td>
+                </tr>
+                <tr>
+                    <td>৪</td>
+                    <td>[ভুল তথ্য ৪]</td>
+                    <td>[সংশোধনীয় তথ্য ৪]</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>উপরোক্ত ভুল তথ্য সংশোধনের জন্য প্রয়োজনীয় কাগজপত্র সংযুক্ত করেছি এবং আপনার সহযোগিতা কামনা করছি।</p>
+
+        <p>ধন্যবাদান্তে,</p>
+
+        <p>বিনীত,<br>
+        [আপনার নাম]<br>
+        [আপনার পাসপোর্ট আবেদন নম্বর]<br>
+        [আপনার ফোন নম্বর]<br>
+        [ইমেইল ঠিকানা, যদি থাকে]<br>
+        [সাক্ষর]</p>
+    </div>
+
+    <a href="#" class="download-btn" onclick="window.print()">ডাউনলোড করুন</a>
+
+</body>
+</html>
